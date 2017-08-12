@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pruebamoviles.sergio.pruebaolimpiasergio.Status">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estatus"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/bluet"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/roundedbutton"
+            android:gravity="center"
+            android:text="BT" />
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/wifi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/roundedbutton"
+            android:gravity="center"
+            android:text="WIFI" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:text="Guardar" />
+
+    <TextView
+        android:id="@+id/Ti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos a guardar"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
