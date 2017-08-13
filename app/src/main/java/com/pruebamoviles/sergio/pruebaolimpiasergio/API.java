@@ -1,7 +1,9 @@
 package com.pruebamoviles.sergio.pruebaolimpiasergio;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONObject;
 
@@ -22,7 +24,10 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class API extends AsyncTask<User, String, String> {
     HttpsURLConnection urlConnection;
-
+    private Context mContext;
+    public API(Context context){
+        this.mContext = context;
+    }
     @Override
     protected String doInBackground(User... args) {
         StringBuilder result = new StringBuilder();
@@ -58,10 +63,7 @@ public class API extends AsyncTask<User, String, String> {
 
     @Override
     protected void onPostExecute(String result) {
-
-        //Do something with the JSON string
-        Log.e("RESULTADO", result);
-
+        Toast.makeText(mContext, "Datos Guardados", Toast.LENGTH_SHORT).show();
     }
 
 

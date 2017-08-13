@@ -67,28 +67,10 @@ public class Status extends AppCompatActivity {
         Intent i = new Intent(this, MainActivity.class);
         user.setWifi(wifi);
         user.setBlue(blue);
-        new API().execute(user);
+        new API(Status.this).execute(user);
         startActivity(i);
     }
 
 
 
-    private class Connection extends AsyncTask {
-
-        @Override
-        protected Object doInBackground(Object... arg0) {
-            try {
-                makeRequest((User) arg0[0]);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            return null;
-        }
-
-    }
-
-    public static void makeRequest(User user) throws Exception
-    {
-
-    }
 }

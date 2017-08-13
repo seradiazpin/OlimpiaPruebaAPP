@@ -56,12 +56,9 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button"
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="save"
-        android:text="Guardar" />
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/Ti"
@@ -73,6 +70,15 @@
     <TextView
         android:id="@+id/user"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:text="Guardar" />
 
 </LinearLayout>

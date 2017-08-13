@@ -131,7 +131,6 @@ public class User implements Serializable{
                 ", phone=" + phone +
                 ", lo=" + lo +
                 ", la=" + la +
-                ", img=" + Arrays.toString(img) +
                 ", wifi=" + wifi +
                 ", blue=" + blue +
                 '}';
